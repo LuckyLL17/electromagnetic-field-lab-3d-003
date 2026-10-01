@@ -3,3 +3,6 @@ dist
 .vite
 .DS_Store
 *.local
+
+# 测试编译产物
+.test-build/

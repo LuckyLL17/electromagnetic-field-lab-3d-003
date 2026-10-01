@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": {"dev":"vite","build":"tsc -b && vite build","preview":"vite preview"},
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test:sampler": "tsc -p test/tsconfig.test.json && node -e \"require('fs').writeFileSync('.test-build/package.json','{\\\"type\\\":\\\"commonjs\\\"}')\" && node .test-build/test/sampler.test.js"
+  },
   "dependencies": {"@react-three/drei":"latest","@react-three/fiber":"latest","@types/react":"latest","@types/react-dom":"latest","@types/three":"latest","@vitejs/plugin-react":"latest","react":"latest","react-dom":"latest","three":"latest","typescript":"latest","vite":"latest"}
 }

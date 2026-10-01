@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node /workspace/.test-build/test/sampler.test.js)"
+    ]
+  }
+}
